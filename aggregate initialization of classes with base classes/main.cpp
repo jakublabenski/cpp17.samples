@@ -45,6 +45,7 @@ struct S2: B2 {};
 int t2() {
     // This code is now ill-formed, tries to call private defalut constructor
     // S2 s4{};
+    
     // This still is correct:
     S2 s4;
     
