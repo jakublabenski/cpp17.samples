@@ -11,8 +11,14 @@
 #include <iostream>
 #endif
 
+// static_assert
+
+// static_assert in C++11 and C++14
+static_assert(1, "Message");
+// static_assert in C++17
+static_assert(1);
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
     std::cout << "Hello, World!\n";
     return 0;
 }
