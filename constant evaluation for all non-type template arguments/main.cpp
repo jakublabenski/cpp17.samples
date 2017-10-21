@@ -17,14 +17,14 @@ struct M {
 };
 
 int a[10];
-int* const ci = a;
+int i = 7;
 
 static void f(int) {};
 static void f(float, int) {};
 
 int main(int argc, const char * argv[]) {
     S<a> s1;
-    S<ci> s2;
+    S<&i> s2;
     S<nullptr> s3;
     S<&s1.i> s4;
     
