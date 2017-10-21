@@ -19,8 +19,10 @@ struct M {
 int a[10];
 int i = 7;
 
-static void f(int) {};
 static void f(float, int) {};
+static void f(int a) {
+    f(a, 0);
+}
 
 int main(int argc, const char * argv[]) {
     S<a> s1;
