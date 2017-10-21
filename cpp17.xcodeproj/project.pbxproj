@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B24E6EF1F9B475100270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E6EE1F9B475100270596 /* main.cpp */; };
 		3B24E6FC1F9B49E500270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E6FB1F9B49E500270596 /* main.cpp */; };
+		3B24E7071F9B7B1000270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E7061F9B7B1000270596 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,13 +30,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		3B24E7021F9B7B1000270596 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3B24E6EB1F9B475100270596 /* cpp17 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cpp17; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B24E6EE1F9B475100270596 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3B24E6F91F9B49E500270596 /* fold expressions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "fold expressions"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B24E6FB1F9B49E500270596 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3B24E7041F9B7B1000270596 /* fold expressions empty parameter packs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "fold expressions empty parameter packs"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B24E7061F9B7B1000270596 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B24E7011F9B7B1000270596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3B24E6E21F9B475100270596 = {
 			isa = PBXGroup;
 			children = (
-				3B24E6ED1F9B475100270596 /* cpp17 */,
 				3B24E6FA1F9B49E500270596 /* fold expressions */,
+				3B24E7051F9B7B1000270596 /* fold expressions empty parameter packs */,
 				3B24E6EC1F9B475100270596 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,16 +88,9 @@
 			children = (
 				3B24E6EB1F9B475100270596 /* cpp17 */,
 				3B24E6F91F9B49E500270596 /* fold expressions */,
+				3B24E7041F9B7B1000270596 /* fold expressions empty parameter packs */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		3B24E6ED1F9B475100270596 /* cpp17 */ = {
-			isa = PBXGroup;
-			children = (
-				3B24E6EE1F9B475100270596 /* main.cpp */,
-			);
-			path = cpp17;
 			sourceTree = "<group>";
 		};
 		3B24E6FA1F9B49E500270596 /* fold expressions */ = {
@@ -89,6 +99,14 @@
 				3B24E6FB1F9B49E500270596 /* main.cpp */,
 			);
 			path = "fold expressions";
+			sourceTree = "<group>";
+		};
+		3B24E7051F9B7B1000270596 /* fold expressions empty parameter packs */ = {
+			isa = PBXGroup;
+			children = (
+				3B24E7061F9B7B1000270596 /* main.cpp */,
+			);
+			path = "fold expressions empty parameter packs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +146,23 @@
 			productReference = 3B24E6F91F9B49E500270596 /* fold expressions */;
 			productType = "com.apple.product-type.tool";
 		};
+		3B24E7031F9B7B1000270596 /* fold expressions empty parameter packs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B24E7081F9B7B1000270596 /* Build configuration list for PBXNativeTarget "fold expressions empty parameter packs" */;
+			buildPhases = (
+				3B24E7001F9B7B1000270596 /* Sources */,
+				3B24E7011F9B7B1000270596 /* Frameworks */,
+				3B24E7021F9B7B1000270596 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "fold expressions empty parameter packs";
+			productName = "fold expressions empty parameter packs";
+			productReference = 3B24E7041F9B7B1000270596 /* fold expressions empty parameter packs */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -142,6 +177,10 @@
 						ProvisioningStyle = Automatic;
 					};
 					3B24E6F81F9B49E500270596 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					3B24E7031F9B7B1000270596 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -161,6 +200,7 @@
 			targets = (
 				3B24E6EA1F9B475100270596 /* cpp17 */,
 				3B24E6F81F9B49E500270596 /* fold expressions */,
+				3B24E7031F9B7B1000270596 /* fold expressions empty parameter packs */,
 			);
 		};
 /* End PBXProject section */
@@ -170,7 +210,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B24E6EF1F9B475100270596 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +218,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B24E6FC1F9B49E500270596 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B24E7001F9B7B1000270596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B24E7071F9B7B1000270596 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +367,24 @@
 			};
 			name = Release;
 		};
+		3B24E7091F9B7B1000270596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B24E70A1F9B7B1000270596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -346,6 +411,15 @@
 			buildConfigurations = (
 				3B24E6FE1F9B49E500270596 /* Debug */,
 				3B24E6FF1F9B49E500270596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B24E7081F9B7B1000270596 /* Build configuration list for PBXNativeTarget "fold expressions empty parameter packs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B24E7091F9B7B1000270596 /* Debug */,
+				3B24E70A1F9B7B1000270596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

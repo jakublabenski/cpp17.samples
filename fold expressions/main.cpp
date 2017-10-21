@@ -75,7 +75,7 @@ int main(int argc, const char * argv[]) {
 
     std::cout << "binary left:" << std::endl;
     binary_right_fold(S{1}, S{2}, S{3}, S{4});
-    
+
     std::cout << "binary right: " << std::endl;
     binary_left_fold(S{1}, S{2}, S{3}, S{4});
 
