@@ -18,5 +18,5 @@ int main(int argc, const char * argv[]) {
     // trigraphs are no longer required feature:
     int a??(10??);
     
-    return r + a[0];
+    return r;
 }

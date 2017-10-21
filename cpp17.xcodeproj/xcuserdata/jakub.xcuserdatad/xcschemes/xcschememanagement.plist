@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>exception specifications part of the type system.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>fold expressions empty parameter packs.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
