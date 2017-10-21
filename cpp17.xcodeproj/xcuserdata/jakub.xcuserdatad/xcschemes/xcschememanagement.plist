@@ -44,6 +44,11 @@
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
+		<key>lambda capture of this by value.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 		<key>misc.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
