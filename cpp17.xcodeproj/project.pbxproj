@@ -18,6 +18,7 @@
 		3B24E7541F9BB5BF00270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E7531F9BB5BF00270596 /* main.cpp */; };
 		3B24E75F1F9BB99400270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E75E1F9BB99400270596 /* main.cpp */; };
 		3B24E76A1F9BC28C00270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E7691F9BC28C00270596 /* main.cpp */; };
+		3B24E7751F9BCA0700270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E7741F9BCA0700270596 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -120,6 +121,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		3B24E7701F9BCA0700270596 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +155,8 @@
 		3B24E75E1F9BB99400270596 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3B24E7671F9BC28C00270596 /* aggregate initialization of classes with base classes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "aggregate initialization of classes with base classes"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B24E7691F9BC28C00270596 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3B24E7721F9BCA0700270596 /* generalizing the range-based for loop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "generalizing the range-based for loop"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B24E7741F9BCA0700270596 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +237,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B24E76F1F9BCA0700270596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -242,6 +261,7 @@
 				3B24E7521F9BB5BF00270596 /* misc */,
 				3B24E75D1F9BB99400270596 /* new attributes */,
 				3B24E7681F9BC28C00270596 /* aggregate initialization of classes with base classes */,
+				3B24E7731F9BCA0700270596 /* generalizing the range-based for loop */,
 				3B24E6EC1F9B475100270596 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -260,6 +280,7 @@
 				3B24E7511F9BB5BF00270596 /* misc */,
 				3B24E75C1F9BB99400270596 /* new attributes */,
 				3B24E7671F9BC28C00270596 /* aggregate initialization of classes with base classes */,
+				3B24E7721F9BCA0700270596 /* generalizing the range-based for loop */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,6 +371,14 @@
 				3B24E7691F9BC28C00270596 /* main.cpp */,
 			);
 			path = "aggregate initialization of classes with base classes";
+			sourceTree = "<group>";
+		};
+		3B24E7731F9BCA0700270596 /* generalizing the range-based for loop */ = {
+			isa = PBXGroup;
+			children = (
+				3B24E7741F9BCA0700270596 /* main.cpp */,
+			);
+			path = "generalizing the range-based for loop";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -542,6 +571,23 @@
 			productReference = 3B24E7671F9BC28C00270596 /* aggregate initialization of classes with base classes */;
 			productType = "com.apple.product-type.tool";
 		};
+		3B24E7711F9BCA0700270596 /* generalizing the range-based for loop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B24E7761F9BCA0700270596 /* Build configuration list for PBXNativeTarget "generalizing the range-based for loop" */;
+			buildPhases = (
+				3B24E76E1F9BCA0700270596 /* Sources */,
+				3B24E76F1F9BCA0700270596 /* Frameworks */,
+				3B24E7701F9BCA0700270596 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "generalizing the range-based for loop";
+			productName = "generalizing the range-based for loop";
+			productReference = 3B24E7721F9BCA0700270596 /* generalizing the range-based for loop */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -595,6 +641,10 @@
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
+					3B24E7711F9BCA0700270596 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 3B24E6E61F9B475100270596 /* Build configuration list for PBXProject "cpp17" */;
@@ -620,6 +670,7 @@
 				3B24E7501F9BB5BF00270596 /* misc */,
 				3B24E75B1F9BB99400270596 /* new attributes */,
 				3B24E7661F9BC28C00270596 /* aggregate initialization of classes with base classes */,
+				3B24E7711F9BCA0700270596 /* generalizing the range-based for loop */,
 			);
 		};
 /* End PBXProject section */
@@ -710,6 +761,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B24E76A1F9BC28C00270596 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B24E76E1F9BCA0700270596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B24E7751F9BCA0700270596 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1015,6 +1074,24 @@
 			};
 			name = Release;
 		};
+		3B24E7771F9BCA0700270596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B24E7781F9BCA0700270596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1122,6 +1199,15 @@
 			buildConfigurations = (
 				3B24E76C1F9BC28C00270596 /* Debug */,
 				3B24E76D1F9BC28C00270596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B24E7761F9BCA0700270596 /* Build configuration list for PBXNativeTarget "generalizing the range-based for loop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B24E7771F9BCA0700270596 /* Debug */,
+				3B24E7781F9BCA0700270596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
