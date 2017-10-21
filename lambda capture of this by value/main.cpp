@@ -11,10 +11,16 @@
 struct S {
     void f() {
         std::cout << "0: l = " << l << std::endl;
+        
+        // Modifies this->l
         [this] () mutable { this->l = 1; }();
         std::cout << "1: l = " << l << std::endl;
+        
+        // Modifies copy of this
         [*this] () mutable { this->l = 2; }();
         std::cout << "2: l = " << l << std::endl;
+        
+        // Modifies copy of this
         [=, *this] () mutable { this->l = 3; }();
         std::cout << "3: l = " << l << std::endl;
     }
