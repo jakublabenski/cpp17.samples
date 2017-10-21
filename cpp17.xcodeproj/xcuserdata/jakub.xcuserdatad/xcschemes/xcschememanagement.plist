@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>direct-list-initialization of enums.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 		<key>exception specifications part of the type system.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
