@@ -18,6 +18,10 @@ static_assert(1, "Message");
 // static_assert in C++17
 static_assert(1);
 
+// hexadecimal floating literals
+float f1 = 0x1234P1F;
+auto f2 = 0x1234P1L;
+
 int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
     return 0;
