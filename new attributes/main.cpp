@@ -79,6 +79,11 @@ using S4 [[maybe_unused]] = S2;
     ;
 };
 
+// Entity may be declared without attribute and later declared with attribute,
+// Entity is marked the first declaration with this attribute
+void w();
+[[maybe_unused]] void w();
+
 int main(int argc, const char * argv[]) {
     fallthrough(argc);
     nodiscard();
