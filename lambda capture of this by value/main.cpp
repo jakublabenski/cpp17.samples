@@ -25,6 +25,12 @@ struct S {
         std::cout << "3: l = " << l << std::endl;
     }
     int l = 0;
+    
+    auto f2() {
+        return [=,*this] {
+            return [=,*this] { return l; };
+        }();
+    }
 };
 
 int main(int argc, const char * argv[]) {
