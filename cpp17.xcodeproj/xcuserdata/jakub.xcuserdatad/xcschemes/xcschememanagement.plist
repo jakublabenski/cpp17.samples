@@ -44,6 +44,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>new attributes.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>remove deprecated.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
