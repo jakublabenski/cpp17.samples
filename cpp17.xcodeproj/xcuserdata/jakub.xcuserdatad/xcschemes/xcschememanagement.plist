@@ -29,6 +29,11 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
+		<key>dynamic memory allocation for over-aligned data.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
 		<key>exception specifications part of the type system.xcscheme</key>
 		<dict>
 			<key>orderHint</key>

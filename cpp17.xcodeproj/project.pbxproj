@@ -21,6 +21,7 @@
 		3B24E7751F9BCA0700270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E7741F9BCA0700270596 /* main.cpp */; };
 		3B24E7801F9BD49900270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E77F1F9BD49900270596 /* main.cpp */; };
 		3B24E78B1F9BDD8000270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E78A1F9BDD8000270596 /* main.cpp */; };
+		3B24E7961F9C8BC300270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E7951F9C8BC300270596 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -150,6 +151,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		3B24E7911F9C8BC300270596 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -181,6 +191,8 @@
 		3B24E77F1F9BD49900270596 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3B24E7881F9BDD8000270596 /* direct-list-initialization of enums */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "direct-list-initialization of enums"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B24E78A1F9BDD8000270596 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3B24E7931F9C8BC300270596 /* dynamic memory allocation for over-aligned data */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "dynamic memory allocation for over-aligned data"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B24E7951F9C8BC300270596 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +294,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B24E7901F9C8BC300270596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -302,6 +321,7 @@
 				3B24E7731F9BCA0700270596 /* generalizing the range-based for loop */,
 				3B24E77E1F9BD49900270596 /* lambda capture of this by value */,
 				3B24E7891F9BDD8000270596 /* direct-list-initialization of enums */,
+				3B24E7941F9C8BC300270596 /* dynamic memory allocation for over-aligned data */,
 				3B24E6EC1F9B475100270596 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -323,6 +343,7 @@
 				3B24E7721F9BCA0700270596 /* generalizing the range-based for loop */,
 				3B24E77D1F9BD49900270596 /* lambda capture of this by value */,
 				3B24E7881F9BDD8000270596 /* direct-list-initialization of enums */,
+				3B24E7931F9C8BC300270596 /* dynamic memory allocation for over-aligned data */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -437,6 +458,14 @@
 				3B24E78A1F9BDD8000270596 /* main.cpp */,
 			);
 			path = "direct-list-initialization of enums";
+			sourceTree = "<group>";
+		};
+		3B24E7941F9C8BC300270596 /* dynamic memory allocation for over-aligned data */ = {
+			isa = PBXGroup;
+			children = (
+				3B24E7951F9C8BC300270596 /* main.cpp */,
+			);
+			path = "dynamic memory allocation for over-aligned data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -680,6 +709,23 @@
 			productReference = 3B24E7881F9BDD8000270596 /* direct-list-initialization of enums */;
 			productType = "com.apple.product-type.tool";
 		};
+		3B24E7921F9C8BC300270596 /* dynamic memory allocation for over-aligned data */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B24E7971F9C8BC300270596 /* Build configuration list for PBXNativeTarget "dynamic memory allocation for over-aligned data" */;
+			buildPhases = (
+				3B24E78F1F9C8BC300270596 /* Sources */,
+				3B24E7901F9C8BC300270596 /* Frameworks */,
+				3B24E7911F9C8BC300270596 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dynamic memory allocation for over-aligned data";
+			productName = "dynamic memory allocation for over-aligned data";
+			productReference = 3B24E7931F9C8BC300270596 /* dynamic memory allocation for over-aligned data */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -745,6 +791,10 @@
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
+					3B24E7921F9C8BC300270596 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 3B24E6E61F9B475100270596 /* Build configuration list for PBXProject "cpp17" */;
@@ -773,6 +823,7 @@
 				3B24E7711F9BCA0700270596 /* generalizing the range-based for loop */,
 				3B24E77C1F9BD49900270596 /* lambda capture of this by value */,
 				3B24E7871F9BDD8000270596 /* direct-list-initialization of enums */,
+				3B24E7921F9C8BC300270596 /* dynamic memory allocation for over-aligned data */,
 			);
 		};
 /* End PBXProject section */
@@ -887,6 +938,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B24E78B1F9BDD8000270596 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B24E78F1F9C8BC300270596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B24E7961F9C8BC300270596 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1246,6 +1305,24 @@
 			};
 			name = Release;
 		};
+		3B24E7981F9C8BC300270596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B24E7991F9C8BC300270596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1380,6 +1457,15 @@
 			buildConfigurations = (
 				3B24E78D1F9BDD8000270596 /* Debug */,
 				3B24E78E1F9BDD8000270596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B24E7971F9C8BC300270596 /* Build configuration list for PBXNativeTarget "dynamic memory allocation for over-aligned data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B24E7981F9C8BC300270596 /* Debug */,
+				3B24E7991F9C8BC300270596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
