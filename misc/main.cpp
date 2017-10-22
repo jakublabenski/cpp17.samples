@@ -20,7 +20,10 @@ static_assert(1);
 
 // hexadecimal floating literals
 float f1 = 0x1234P1F;
-auto f2 = 0x1234P1L;
+auto f2 = 0x1234.5P1L;
+
+// using attribute namespaces without repetition
+[[using gnu: unused, noreturn]] void u();
 
 int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
