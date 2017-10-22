@@ -30,6 +30,10 @@ template <auto v> struct S {};
 S<1> a;
 S<'a'> b;
 
+// standard and non-standard attributes
+[[some_unknown_attribute]] void m1();
+[[pp::some_unknown_attribute]] void m2();
+
 int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
     return 0;
