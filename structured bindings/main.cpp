@@ -29,7 +29,7 @@ auto [p1, p2] = std::make_pair('a', 1);
 
 // for array:
 std::array<bool, 3> ba;
-auto [b1, b2, b3] = ba;
+const auto [b1, b2, b3] = ba;
 
 // for struct:
 struct S {
