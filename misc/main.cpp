@@ -25,6 +25,11 @@ auto f2 = 0x1234.5P1L;
 // using attribute namespaces without repetition
 [[using gnu: unused, noreturn]] void u();
 
+// declaring non-type template parameters with auto
+template <auto v> struct S {};
+S<1> a;
+S<'a'> b;
+
 int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
     return 0;
