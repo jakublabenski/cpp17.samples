@@ -34,6 +34,16 @@ S<'a'> b;
 [[some_unknown_attribute]] void m1();
 [[pp::some_unknown_attribute]] void m2();
 
+// inline variables:
+inline int inlined;
+
+// Compatibility with prior version of standard:
+struct A {
+    static constexpr int n = 5; // definition in C++17 (declaration in C++14)
+};
+const int A::n; // redundant declaration (definition in C++14)
+
+
 int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
     return 0;
