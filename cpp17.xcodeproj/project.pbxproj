@@ -23,6 +23,7 @@
 		3B24E78B1F9BDD8000270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E78A1F9BDD8000270596 /* main.cpp */; };
 		3B24E7961F9C8BC300270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E7951F9C8BC300270596 /* main.cpp */; };
 		3B24E7A11F9C9E4500270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E7A01F9C9E4500270596 /* main.cpp */; };
+		3B24E7AC1F9D072A00270596 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B24E7AB1F9D072A00270596 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -170,6 +171,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		3B24E7A71F9D072A00270596 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -205,6 +215,8 @@
 		3B24E7951F9C8BC300270596 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3B24E79E1F9C9E4500270596 /* refining expression evaluation order for idiomatic cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "refining expression evaluation order for idiomatic cpp"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B24E7A01F9C9E4500270596 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3B24E7A91F9D072A00270596 /* constexpr if-statements */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "constexpr if-statements"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B24E7AB1F9D072A00270596 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +332,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B24E7A61F9D072A00270596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -342,6 +361,7 @@
 				3B24E7891F9BDD8000270596 /* direct-list-initialization of enums */,
 				3B24E7941F9C8BC300270596 /* dynamic memory allocation for over-aligned data */,
 				3B24E79F1F9C9E4500270596 /* refining expression evaluation order for idiomatic cpp */,
+				3B24E7AA1F9D072A00270596 /* constexpr if-statements */,
 				3B24E6EC1F9B475100270596 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -365,6 +385,7 @@
 				3B24E7881F9BDD8000270596 /* direct-list-initialization of enums */,
 				3B24E7931F9C8BC300270596 /* dynamic memory allocation for over-aligned data */,
 				3B24E79E1F9C9E4500270596 /* refining expression evaluation order for idiomatic cpp */,
+				3B24E7A91F9D072A00270596 /* constexpr if-statements */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -495,6 +516,14 @@
 				3B24E7A01F9C9E4500270596 /* main.cpp */,
 			);
 			path = "refining expression evaluation order for idiomatic cpp";
+			sourceTree = "<group>";
+		};
+		3B24E7AA1F9D072A00270596 /* constexpr if-statements */ = {
+			isa = PBXGroup;
+			children = (
+				3B24E7AB1F9D072A00270596 /* main.cpp */,
+			);
+			path = "constexpr if-statements";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -772,6 +801,23 @@
 			productReference = 3B24E79E1F9C9E4500270596 /* refining expression evaluation order for idiomatic cpp */;
 			productType = "com.apple.product-type.tool";
 		};
+		3B24E7A81F9D072A00270596 /* constexpr if-statements */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B24E7AD1F9D072A00270596 /* Build configuration list for PBXNativeTarget "constexpr if-statements" */;
+			buildPhases = (
+				3B24E7A51F9D072A00270596 /* Sources */,
+				3B24E7A61F9D072A00270596 /* Frameworks */,
+				3B24E7A71F9D072A00270596 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "constexpr if-statements";
+			productName = "constexpr if-statements";
+			productReference = 3B24E7A91F9D072A00270596 /* constexpr if-statements */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -845,6 +891,10 @@
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
+					3B24E7A81F9D072A00270596 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 3B24E6E61F9B475100270596 /* Build configuration list for PBXProject "cpp17" */;
@@ -875,6 +925,7 @@
 				3B24E7871F9BDD8000270596 /* direct-list-initialization of enums */,
 				3B24E7921F9C8BC300270596 /* dynamic memory allocation for over-aligned data */,
 				3B24E79D1F9C9E4500270596 /* refining expression evaluation order for idiomatic cpp */,
+				3B24E7A81F9D072A00270596 /* constexpr if-statements */,
 			);
 		};
 /* End PBXProject section */
@@ -1005,6 +1056,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B24E7A11F9C9E4500270596 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B24E7A51F9D072A00270596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B24E7AC1F9D072A00270596 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1400,6 +1459,24 @@
 			};
 			name = Release;
 		};
+		3B24E7AE1F9D072A00270596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B24E7AF1F9D072A00270596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1552,6 +1629,15 @@
 			buildConfigurations = (
 				3B24E7A31F9C9E4500270596 /* Debug */,
 				3B24E7A41F9C9E4500270596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B24E7AD1F9D072A00270596 /* Build configuration list for PBXNativeTarget "constexpr if-statements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B24E7AE1F9D072A00270596 /* Debug */,
+				3B24E7AF1F9D072A00270596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
