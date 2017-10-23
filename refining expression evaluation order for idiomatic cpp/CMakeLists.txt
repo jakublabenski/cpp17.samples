@@ -1,0 +1,4 @@
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(refining_expression_evaluation_order_for_idiomatic_cpp main.cpp)
