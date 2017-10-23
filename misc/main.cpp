@@ -38,13 +38,24 @@ S<'a'> b;
 inline int inlined;
 
 // Compatibility with prior version of standard:
-struct A {
-    static constexpr int n = 5; // definition in C++17 (declaration in C++14)
-};
-const int A::n; // redundant declaration (definition in C++14)
+struct S2 {
+    static constexpr int n = 5; // definition in C++17 (declaration in C++14)
+};
+const int S2::n; // redundant declaration (definition in C++14)
 
+#if 0
+// Matching of template template-arguments excludes compatible templates
+template <template <int> class> TT_Int {};
+template <template <auto> class> TT_Auto {};
+template <int> class T_Int {};
+template <auto> class T_Auto {};
+
+TT_Int<T_Int> tt1;
+TT_Int<T_Auto> tt2;
+TT_Auto<T_Int> tt3;
+TT_Auto<T_Auto> tt4;
+#endif
 
 int main(int argc, const char * argv[]) {
-    std::cout << "Hello, World!\n";
     return 0;
 }
