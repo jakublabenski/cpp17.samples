@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>17</integer>
 		</dict>
+		<key>constexpr lambda.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
 		<key>cpp17.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -43,6 +48,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>8</integer>
+		</dict>
+		<key>filesystem.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
 		</dict>
 		<key>fold expressions empty parameter packs.xcscheme</key>
 		<dict>
