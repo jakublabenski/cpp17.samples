@@ -41,9 +41,9 @@ struct S {
 auto [i, bf, f2] = S{};
 
 // number of exements must match:
-// auto [b5, b6] = ba;
-// auto or auto&, with possoble cv qualifiers required:
-// bool [b7, b8, b9] = ba;
+// auto [b5, b6] = ba; // ill-formed
+// auto or auto&, with possible cv qualifiers allowed only:
+// bool [b7, b8, b9] = ba; // ill-formed
 
 int main(int argc, const char * argv[]) {
     return 0;
