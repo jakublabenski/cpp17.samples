@@ -89,6 +89,11 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>selection statements with initializer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
 		<key>structured bindings.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
