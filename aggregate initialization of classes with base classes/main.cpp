@@ -37,7 +37,7 @@ struct B2 {
     friend struct S2;
     int b;
 private:
-    B2();
+    B2() {};
 };
 
 struct S2: B2 {};
