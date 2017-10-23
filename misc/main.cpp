@@ -56,6 +56,20 @@ TT_Auto<T_Int> tt3;
 TT_Auto<T_Auto> tt4;
 #endif
 
+// pack expansions in using-declarations
+template <typename... T>
+struct S3 : T... {
+    using T::operator()...;
+};
+
+namespace Ns {
+    using INT = int;
+    using FLOAT = float;
+}
+
+// Elements of using can be comma separated:
+using Ns::INT, Ns::FLOAT;
+
 int main(int argc, const char * argv[]) {
     return 0;
 }
