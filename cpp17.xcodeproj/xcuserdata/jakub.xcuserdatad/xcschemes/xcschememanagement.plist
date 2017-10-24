@@ -129,6 +129,11 @@
 			<key>orderHint</key>
 			<integer>18</integer>
 		</dict>
+		<key>template argument deduction for class templates.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>26</integer>
+		</dict>
 		<key>u8 character literals.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
