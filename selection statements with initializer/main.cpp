@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <string.h>
 
 int main(int argc, const char * argv[]) {
     if (auto len = argc > 0 ? strlen(argv[0]) : 0; len < 10) {
