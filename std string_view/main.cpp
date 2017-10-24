@@ -24,13 +24,13 @@ int main(int argc, const char * argv[]) {
     
     std::cout << "sizeof string_view: " << sizeof(sv) << '\n';
     std::cout << "max_size: " << sv.max_size() << '\n';
-    std::cout << "lenght: " << sv.length() << " size: " << sv.size() << '\n';
+    std::cout << "length: " << sv.length() << ", size: " << sv.size() << '\n';
 
     std::cout << sv << '\n';
 
-    auto sv2 = sv.substr(10, sv.size() - 20);
-    sv.remove_prefix(10);
-    sv.remove_suffix(10000);
+    auto sv2 = sv.substr(3, sv.size() - 6);
+    sv.remove_prefix(3);
+    sv.remove_suffix(3);
     
     // [] returns const value, cannot assign:
     //sv[10] = 'a';

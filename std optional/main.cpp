@@ -21,7 +21,7 @@ namespace s = std::experimental;
 s::optional<std::string> get(int argc, const char* argv[])
 {
     if (argc < 2) {
-        return s::optional<std::string>{};
+        return {};
     }
     return s::make_optional(std::string{argv[1]});
 }
