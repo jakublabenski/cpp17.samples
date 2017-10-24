@@ -104,6 +104,11 @@
 			<key>orderHint</key>
 			<integer>19</integer>
 		</dict>
+		<key>std optional.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
 		<key>std variant.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -123,6 +128,14 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3B24E7F51F9FA76F00270596</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
