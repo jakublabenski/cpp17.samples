@@ -104,6 +104,11 @@
 			<key>orderHint</key>
 			<integer>19</integer>
 		</dict>
+		<key>std.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
 		<key>structured bindings.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
