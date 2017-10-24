@@ -109,6 +109,11 @@
 			<key>orderHint</key>
 			<integer>24</integer>
 		</dict>
+		<key>std string_view.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>25</integer>
+		</dict>
 		<key>std variant.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
