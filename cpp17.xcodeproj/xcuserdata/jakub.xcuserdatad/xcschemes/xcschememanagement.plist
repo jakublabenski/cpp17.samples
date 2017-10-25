@@ -89,6 +89,11 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>parallelized algorithms.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>27</integer>
+		</dict>
 		<key>refining expression evaluation order for idiomatic cpp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
