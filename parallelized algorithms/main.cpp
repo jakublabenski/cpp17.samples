@@ -9,7 +9,7 @@
 #include <iostream>
 
 #include <algorithm>
-#include <experimental/execution>
+#include <execution>
 
 #if __has_include(<parallel>)
 #include <parallel>
