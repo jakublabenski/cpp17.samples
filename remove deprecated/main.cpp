@@ -9,7 +9,7 @@
 #include <iostream>
 
 // removing deprecated exception specifications
-// Only three allowed excdption specification syntaxes:
+// Only three allowed exception specification syntaxes:
 void f_noexcept() noexcept;
 void f() noexcept(true);
 // using throw() is deprecated:

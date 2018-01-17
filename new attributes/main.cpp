@@ -18,7 +18,7 @@ int fallthrough(int argc)
             [[fallthrough]]; // semicolon is required
         case 1:
         case 2:
-            // ill-formed:
+            // ill-formed - must be last element of case:
             // [[fallthrough]];
             std::cout << "case 0-2\n";
             break;
@@ -75,7 +75,7 @@ using S4 [[maybe_unused]] = S2;
 
 [[maybe_unused]] void f([[maybe_unused]] int a)
 {
-    [[maybe_unused]] x:
+    [[maybe_unused]] unused_label:
     ;
 };
 

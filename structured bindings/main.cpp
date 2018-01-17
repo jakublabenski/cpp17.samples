@@ -40,7 +40,7 @@ struct S {
 
 auto [i, bf, f2] = S{};
 
-// number of exements must match:
+// number of elements must match:
 // auto [b5, b6] = ba; // ill-formed
 // auto or auto&, with possible cv qualifiers allowed only:
 // bool [b7, b8, b9] = ba; // ill-formed
