@@ -14,7 +14,7 @@ void ft(T t)
     not_declared(t);
 };
 
-void f0(int a)
+void f1(int a)
 {
     if constexpr (sizeof(long) > sizeof(int)) {
     } else if constexpr (false) {
@@ -35,7 +35,7 @@ void f0(int a)
     }
 }
 
-auto f()
+auto f2()
 {
     // return statements in a non-taken branch are ignored for return type
     // deduction
@@ -46,6 +46,19 @@ auto f()
         return 1;
     }
 }
+
+auto f3()
+{
+    // constexpr if can be combined with initializer, which doesn't have to be
+    // constexpr
+    if constexpr (int z = f2(); false) {
+        // discarded statements:
+        return 1.0;
+    } else {
+        return 1;
+    }
+}
+
 
 int main(int argc, const char * argv[]) {
     return 0;
